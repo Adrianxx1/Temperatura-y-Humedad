@@ -45,8 +45,11 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Iniciar Sesión",
-                style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
+                "Hola de nuevo!!",
+                
+                style: TextStyle(
+                  color: Colors.green,
+                  fontSize: 27, fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 height: 30,
@@ -75,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   height: 45,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.green,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
@@ -144,7 +147,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(
                       "Registrate",
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: Colors.green,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

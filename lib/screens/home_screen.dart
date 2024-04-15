@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(color: Color.fromARGB(181, 0, 0, 0)),
             ),
             leading: const Icon(
-              Icons.emoji_nature,
+              Icons.thermostat,
               color: Color.fromARGB(255, 0, 0, 0),
             ),
             trailing: const Icon(
