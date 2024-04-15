@@ -34,7 +34,7 @@ class _SignUpPageState extends State<SignUpPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text("SignUp"),
+        title: Text("Registrar"),
       ),
       body: Center(
         child: Padding(
@@ -43,7 +43,7 @@ class _SignUpPageState extends State<SignUpPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Sign Up",
+                "Registrar",
                 style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -51,7 +51,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               FormContainerWidget(
                 controller: _usernameController,
-                hintText: "Username",
+                hintText: "Nombre",
                 isPasswordField: false,
               ),
               SizedBox(
@@ -59,7 +59,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               FormContainerWidget(
                 controller: _emailController,
-                hintText: "Email",
+                hintText: "Correo",
                 isPasswordField: false,
               ),
               SizedBox(
@@ -67,7 +67,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               FormContainerWidget(
                 controller: _passwordController,
-                hintText: "Password",
+                hintText: "Contraseña",
                 isPasswordField: true,
               ),
               SizedBox(
@@ -82,12 +82,12 @@ class _SignUpPageState extends State<SignUpPage> {
                   width: double.infinity,
                   height: 45,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.green,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                       child: isSigningUp ? CircularProgressIndicator(color: Colors.white,):Text(
-                    "Sign Up",
+                    "Registrate",
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   )),
@@ -99,7 +99,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Already have an account?"),
+                  Text("Ya tienes cuenta?"),
                   SizedBox(
                     width: 5,
                   ),
@@ -112,9 +112,9 @@ class _SignUpPageState extends State<SignUpPage> {
                             (route) => false);
                       },
                       child: Text(
-                        "Login",
+                        "Entra aqui",
                         style: TextStyle(
-                            color: Colors.blue, fontWeight: FontWeight.bold),
+                            color: Colors.green, fontWeight: FontWeight.bold),
                       ))
                 ],
               )
